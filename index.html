@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul{
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li{
+            list-style-type: none;
+            padding:15px;
+            font-size: 20px;
+        }
+        nav ul li:hover{
+            color: skyblue;
+        }
+         .b img{
+            width: 120%;
+            height: 70vh;
+            padding: 5% 20% 10px 10%;
+        }
+        .b{
+            display: flex;
+            justify-content: space-between;
+            padding: 5%;
+            padding-left: 5%;
+        }
+        .a,.b{
+            background-image: url(im.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .b1{
+            padding-top:5%;
+            font-size: 200%;
+        }
+        .c{
+            display: flex;
+        }
+        .c1{
+            border: 2px solid skyblue;
+            text-align: center;
+            width: 33.3%;
+            background-color: skyblue;
+            padding: 11%;
+        }
+        .c2{
+            border: 2px solid skyblue;
+            text-align: center;
+            width: 33.3%;
+            background-color: rgb(130, 195, 233);
+            padding: 11%;
+        }
+        .c3{
+            border: 2px solid skyblue;
+            text-align: center;
+            width: 33.3%;
+            background-color: skyblue;
+            padding: 12%;
+        }
+        .d{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .d1{
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 5%;
+         }
+        .d2{
+            text-align: center;
+            justify-content: center;
+            padding-top: 5%;
+            padding-right: 6%;
+        }
+        .e{
+            background-color: rgb(165, 222, 245);
+            padding: 10%;
+        }
+        .f{
+            padding: 10%;
+        }
+        .f11{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .f12{
+            display: flex;
+            padding-top: 5%;
+            justify-content: space-evenly;
+        }
+        .f1{
+             border: 1px solid white;
+             width: 33.3%;
+             padding: 10px;
+         }
+         .f2{
+              border: 1px solid white;
+              width: 33.3%;
+              padding: 10px;
+         }
+         .f3{
+              border: 1px solid white;
+              width: 33.3%;
+              padding: 10px;
+         }
+         .f4{
+            border: 1px solid white;
+            width: 33.3%;
+            padding: 10px;
+         }
+         .f5{
+            border: 1px solid white;
+            width: 33.3%;
+            padding: 10px;
+         }
+         .f6{
+            border: 1px solid white;
+            width: 33.3%;
+         }
+         .g{ 
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5%;
+            background-image: url(bg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+         .g1{
+            text-align: center;
+            justify-content: center;
+            padding: 5%;
+         }
+        .h{
+            padding: 5%;
+            text-align: center;
+        }
+        form{
+            /*padding: 4%;*/
+            text-align: center;
+            justify-content: center;
+        }
+        .i{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10%;
+        }
+        .h{
+            background-image: url(point.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .v{
+        text-align: center;
+        justify-content: center;
+        padding: 5%;
+        color:rgb(24, 148, 197);
+        }
+        .b1 svg{
+            border-radius: 50%;
+            background-color: skyblue;
+            padding: 3%;
+        }
+        .b1 svg:hover{
+            zoom: 120%;
+        }
+        a{
+            text-decoration-line: none;
+        }
+        .a{
+            position: fixed;
+            width: 100%;
+            padding-right: 10%;
+        }
+        .zoom-img{
+            height: 120%;
+            width: 150%;
+        }
+        .zoom-img  img {
+        width: 100%;
+        transition: all .3s ease-in-out;
+      }
+      .zoom-img img:hover{
+        transform: scale(1.2);
+        opacity: 1;
+     }
+      .i1:hover{
+              border: 2px solid blue;
+              padding: 2%;
+              border-radius: 2%;
+      }
+      .i2:hover{
+              border: 2px solid blue;
+              padding: 2%;
+              border-radius: 2%;
+      }
+      .i3:hover{
+              border: 2px solid blue;
+              padding: 2%;
+              border-radius: 2%;
+      }
+      .i4:hover{
+              border: 2px solid blue;
+              padding: 2%;
+              border-radius: 2%;
+      }
+      .f1 img:hover{
+        transform: scale(1.3);
+        border: 2px double aqua;
+      }
+      .f2 img:hover{
+        transform: scale(1.3);
+        border: 2px double aqua;
+      }
+      .f3 img:hover{
+        transform: scale(1.3);
+        border: 2px double aqua;
+      }
+      .f4 img:hover{
+        transform: scale(1.3);
+        border: 2px double aqua;
+      }
+      .f5 img:hover{
+        transform: scale(1.3);
+        border: 2px double aqua;
+      }
+      .f6 img:hover{
+        transform: scale(1.3);
+        border: 2px double aqua;
+      }
+      .g2 img:hover{
+        transform: translateY(-10px);
+    }
+    .d1 img:hover{
+        transform: translateY(-10px);
+        zoom: 110%;
+    }
+    .c1 input:hover{
+        zoom: 120%;
+        background-color: rgb(155, 78, 226);
+    }
+    .c2 input:hover{
+        zoom: 120%;
+        background-color: rgb(155, 78, 226);
+    }
+    .c3 input:hover{
+        zoom: 120%;
+        background-color: rgb(155, 78, 226);
+    }
+      </style>
+</head>
+<body>
+    <div class="a">
+        <nav> 
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Department">Department</a></li>
+                <li><a href="#faq">Appointment</a></li>
+                <li><a href="#Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        </div>
+    <div class="b">
+        <div class="b1">
+            <h1><i>Professional Family Health Care</i></h1><br>
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M480-480Zm0 360q-18 0-34.5-6.5T416-146L148-415q-35-35-51.5-80T80-589q0-103 67-177t167-74q48 0 90.5 19t75.5 53q32-34 74.5-53t90.5-19q100 0 167.5 74T880-590q0 49-17 94t-51 80L543-146q-13 13-29 19.5t-34 6.5Zm40.29-510q7.71 0 13.71 4 6 4 11 10l71 106h188.13q7.94-19.43 11.9-39.43 3.97-20 3.97-40.57 0-77-49.95-133.5Q720.11-780 645.19-780q-35.19 0-67.69 14.5T521-725l-27 29q-3 3-6 5t-8 2q-5 0-8.64-1.88-3.63-1.89-6.36-5.12l-27-29q-24.27-25.82-56.64-40.41Q349-780 314-780q-74.57 0-124.29 56.44Q140-667.12 140-590q0 20.72 4 40.86T155.65-510H360q7.58 0 14.39 3.61 6.82 3.61 10.61 9.39l46 70 60-182q3.08-9 11.18-15 8.09-6 18.11-6Zm8.71 97-61 182q-2.97 9-11.15 15T439-330q-8 0-14-4t-10-10l-71-106H198l261 261q5 5 9.8 7 4.8 2 11.2 2 6.4 0 11.2-2 4.8-2 9.8-7l260-261H600q-8 0-14-4t-11-10l-46-69Z"/></svg>&nbsp;&nbsp;&nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M140-80q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h180v-100q0-24 18-42t42-18h200q24 0 42 18t18 42v100h180q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h680v-520H140v520Zm240-580h200v-100H380v100ZM140-140v-520 520Zm310-230v120h60v-120h120v-60H510v-120h-60v120H330v60h120Z"/></svg>&nbsp;&nbsp;&nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M540-81q-112 0-186-78.5T280-347v-35q-85-11-142.5-75.71T80-610v-230h120v-40h60v140h-60v-40h-60v169.68q0 71.32 49.5 120.82T310-440q71 0 120.5-49.5T480-610.32V-780h-60v40h-60v-140h60v40h120v230q0 87.58-57.5 152.29T340-382v35q0 85 56.5 145.5T540-141q81 0 140.5-60.15T740-347.23V-424q-35-10-57.5-39T660-530q0-45.83 32.12-77.92 32.12-32.08 78-32.08T848-607.92q32 32.09 32 77.92 0 38-22.5 67T800-424v77q0 111-76.5 188.5T540-81Zm229.82-399q21.18 0 35.68-14.32 14.5-14.33 14.5-35.5 0-21.18-14.32-35.68-14.33-14.5-35.5-14.5-21.18 0-35.68 14.32-14.5 14.33-14.5 35.5 0 21.18 14.32 35.68 14.33 14.5 35.5 14.5Zm.18-50Z"/></svg>
+        </div>
+        <div class="zoom-img">
+        <img src="image1[1].jpg">
+        </div></div>
+    <div class="c">
+        <div class="c1">
+            <h3 >1-800-600-380</h3>&nbsp;
+            <h2>EMERGENCY SERVICE</h2>&nbsp;
+            <p>Aliquam erat volutpat. Nullam imperdiet sapien felis, non lobortis odio mattis in. Quisque dapibus aliquet dictum. Integer dapibus ullamcorper est, ac .</p>
+            <label for="r" name="READ MORE"></label>
+             <input style="border-radius: 20px; padding: 10px; margin: 40px;" type="button" id="r" value="SEE MORE">
+        </div>
+        <div class="c2">
+           <h2>DO YOU WANT TO MAKE AN APPOINTMENT</h2>&nbsp;
+           <p>Aliquam erat volutpat. Nullam imperdiet sapien felis, non lobortis odio mattis in. Quisque dapibus aliquet dictum.</p>
+           <label for="r" name="READ MORE"></label>
+             <input style="border-radius: 20px; padding: 10px; margin:50px;" type="button" id="r" value="BOOK NOW">
+        </div>
+        <div class="c3">
+            <h2>OPENING HOURS</h2>&nbsp;&nbsp;&nbsp;<br>
+             <p>
+             Monday – Friday&nbsp;
+             Saturtay – Sunday</p>
+             <p class="c31">
+             <label for="r" name="READ MORE"></label>
+             <input style="border-radius: 20px; padding: 10px; margin:150px 10px;" type="button" id="r" value="CONTACT US">
+            </p>
+            </div>
+    </div>
+    <article id="About">
+    <div class="d">
+        <div class="d1">
+            <img src="set.png">
+        </div>
+        <div class="d2">
+            <p style="font-size: 40px;"><b>About</b> Jevelin Clinic<p><br><br>
+            <p style="color: rgb(55, 174, 221);">PROFESSIONAL HEALTH CARE</p><br><br>
+            <p>Health care, or healthcare, is the improvement of health via the prevention, diagnosis, treatment, amelioration or cure of disease, illness, injury, and other physical and mental impairments in people. Health care is delivered by health professionals and allied health fields. </p>
+             
+        </div>
+    </div>
+    </article>
+    <article id="Department">
+    <div class="e">
+        <h1 style="text-align: center;">HOW CAN WE HELP YOU</h1><br>
+        <P style="text-align: center; color: gray;">READMORE ABOUT OUR SERVICES</P>
+    </div>
+    <div class="f">
+        <div class="f11">
+        <div class="f1">
+            <center>  <img src="eye.jpeg" style="border-radius: 50%; height: 150px; width: 200px;"></center><br>
+            <h2>Ophthalmology</h2><br>
+            <p>Ophthalmology is a clinical and surgical specialty within medicine that deals with the diagnosis and treatment of eye disorders. A former term is oculism. An ophthalmologist is a physician who undergoes subspecialty training in medical and surgical eye care. </p>
+        </div>
+        <div class="f2">
+            <center> <img src="beat.png" style="border-radius: 50%; height: 150px; width: 200px; "></center><br>
+            <h2>Cardiology</h2><br>
+            <p>Cardiology is the study of the heart. Cardiology is a branch of medicine that deals with disorders of the heart and the cardiovascular system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease, and electrophysiology. </p>
+        </div>
+        <div class="f3">
+            <center> <img src="dent.png" style="border-radius: 50%; height: 150px; width: 200px; "></center><br>
+            <h2>Dentistry</h2><br>
+            <p>Dentistry, also known as dental medicine and oral medicine, is the branch of medicine focused on the teeth, gums, and mouth. It consists of the study, diagnosis, prevention, management, and treatment of diseases, disorders, and conditions of the mouth, most commonly focused on dentition as well as the oral mucosa. </p>
+        </div>
+        </div>
+        <div class="f12">
+        <div class="f4">
+            <center> <img src="kata.png" style="border-radius: 50%; height: 100px; width: 200px;" ></center><br>
+            <h2>Laboratory</h2><br>
+            <p>A laboratory is a facility that provides controlled conditions in which scientific or technological research, experiments, and measurement may be performed. </p>
+        </div>
+        <div class="f5">
+            <center><img src="setsc.jpeg" style="border-radius: 50%; height: 100px; width: 250px;"></center><br>
+            <h2>Pediatrics</h2><br>
+            <p>Pediatrics also spelled paediatrics or pædiatrics, is the branch of medicine that involves the medical care of infants, children, adolescents, and young adults. In the United Kingdom, pediatrics covers many of their youth until the age of 18. </p>
+        </div>
+        <div class="f6">
+            <center><img src="rad.png" style=" border-radius: 50%; height: 130px; width: 200px;" ></center>
+            <h2>Radiology</h2><br>
+            <p>Radiology is the medical specialty that uses medical imaging to diagnose diseases and guide their treatment, within the bodies of humans and other animals. </p>
+        </div>
+        </div>
+    </div>
+    <div class="g">
+        <div class="g1">
+            <h1>Jenna Berg</h1><br><br>
+            <p style="color: skyblue;">PROFESSIONAL DENTIST</p><br><br>
+            <b>Dentistry, also known as dental medicine and oral medicine, is the branch of medicine focused on the teeth, gums, and mouth. It consists of the study, diagnosis, prevention, management, and treatment of diseases, disorders, and conditions of the mouth, most commonly focused on dentition as well as the oral mucosa. </b><br><br><br>
+            <p>A dentist, also known as a dental surgeon, is a health care professional who specializes in dentistry, the branch of medicine focused on the teeth, gums, and mouth. The dentist's supporting team aids in providing oral health services. 
+              Dentists are doctors because they undergo extensive medical training. In the United States, a person who wants to become a dentist must receive an undergraduate degree and complete four years of focused training in an accredited dental school.
+              The extent of training is similar in other countries, as well — even though titles may differ. For example, in the United Kingdom, people refer to dentists as dental surgeons and traditionally use the title Mr., Miss or Mrs., though some may use Dr.</p>
+        </div>
+        <div class="g2">
+            <img src="laj2xxtl.png" style="width: 550px; height: 480px;">
+        </div>
+    </div>
+    </article>
+    <article id="Contacts">
+    <div class="i">
+        <div class="i1" style="text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+            <h2>ADDRESS</h2><br>
+            <p>Street number 5, Town, Country</p>
+        </div>
+        <div class="i2" style="text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
+            <h2>WORK HOURS</h2><br>
+            <p>Mon. – Frie. 11AM – 19PM</p>
+        </div>
+        <div class="i3" style="text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+            <h2>E-MAIL</h2><br>
+            <p>brandname@company.com</p>
+        </div>
+        <div class="i4" style="text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+           <h2>TELEPHONE</h2><br>
+           <p>(+371) 512 566 921</p>
+        </div>
+    </div>
+    </article>
+    <article id="faq">
+    <div class="h">
+            <h1 style="font-size: 50px;">Make an Appointment</h1><br>
+            <p style="color:rgb(18, 85, 112);">AND WE WILL CONTACT YOU</p><br><br>
+            <form style="font-size: 20px; padding-left: 600px;">
+            <label for="name">  Full Name :</label>
+            <input type="text" id="name" name="name" value=""><br><br>
+            <label for="mail">Email :</label>
+            <input type="text" id="mail" name="gmail" value=""><br><br>
+            <label for="dob">Date of Birth :</label>
+            <input type="date" id="dob"><br><br>
+            <label for="num">Phone :</label>
+            <input type="number" id="num" name="Moible no:" value=""><br><br>
+            <label for="name">Subject :</label>
+            <input type="text" id="name" name="name" value=""><br><br>
+            <input type="button" value="Book Now" style="border-radius: 25%; padding: 2%; background-color: aqua;">
+            </form>
+        </div>
+        </article>
+        <div class="v">Copyright © 2024- Theme by Shufflehound</div>
+</body>
+</html>
